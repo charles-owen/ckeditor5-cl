@@ -19,16 +19,16 @@
     "@ckeditor/ckeditor5-dev-utils": "^10.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^6.0.0",
     "@ckeditor/ckeditor5-easy-image": "^10.0.2",
-    "@ckeditor/ckeditor5-editor-classic": "^11.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^11.0.2",
     "@ckeditor/ckeditor5-essentials": "^10.1.1",
     "@ckeditor/ckeditor5-heading": "^10.0.2",
-    "@ckeditor/ckeditor5-image": "^10.2.0",
+    "@ckeditor/ckeditor5-image": "^12.0.0",
     "@ckeditor/ckeditor5-link": "^10.0.3",
     "@ckeditor/ckeditor5-list": "^11.0.1",
     "@ckeditor/ckeditor5-paragraph": "^10.0.2",
-    "@ckeditor/ckeditor5-theme-lark": "^11.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^12.0.0",
     "@ckeditor/ckeditor5-upload": "^10.0.2",
-    "file-loader": "^2.0.0",
+    "file-loader": "^3.0.0",
     "postcss-loader": "^2.1.5",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.21.0",
@@ -46,5 +46,8 @@
     "build:prod": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-editor-classic": "11.0.2"
   }
 }
