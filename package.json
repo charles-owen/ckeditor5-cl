@@ -28,14 +28,14 @@
     "@ckeditor/ckeditor5-paragraph": "^10.0.2",
     "@ckeditor/ckeditor5-theme-lark": "^12.0.0",
     "@ckeditor/ckeditor5-upload": "^10.0.2",
-    "file-loader": "^3.0.0",
-    "postcss-loader": "^2.1.5",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.21.0",
-    "uglifyjs-webpack-plugin": "^1.2.7",
-    "url-loader": "^1.1.1",
-    "webpack": "^4.15.0",
-    "webpack-cli": "^3.0.8"
+    "file-loader": "^4.2.0",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^3.1.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   },
   "engines": {
     "node": ">=6.9.0",
