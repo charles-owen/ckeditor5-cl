@@ -6,7 +6,7 @@ import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import Clipboard from '@ckeditor/ckeditor5-clipboard/src/clipboard';
 import GoogleDocsNormalizer from "@ckeditor/ckeditor5-paste-from-office/src/normalizers/googledocsnormalizer";
 import HtmlNormalizer from './normalizers/HtmlNormalizer';
-import RtfToHtml from '@charles-owen/rtftohtml';
+import {RtfToHtml} from '@charles-owen/rtftohtml';
 
 // import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 
