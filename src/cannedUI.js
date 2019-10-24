@@ -1,5 +1,5 @@
 /**
- * @module heading/headingui
+ * @module CannedUI
  */
 
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
@@ -12,7 +12,7 @@ import Collection from '@ckeditor/ckeditor5-utils/src/collection';
 import cannedIcon from '../img/canned.svg';
 
 /**
- * The headings UI feature. It introduces the `canned` dropdown.
+ * The Canned UI feature. It introduces the `canned` dropdown.
  *
  * @extends module:core/plugin~Plugin
  */
