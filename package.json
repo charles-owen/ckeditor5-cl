@@ -12,7 +12,7 @@
     "build"
   ],
   "devDependencies": {
-    "@charles-owen/rtftohtml": "^1.0.0",
+    "@charles-owen/rtftohtml": "^1.0.2",
     "@ckeditor/ckeditor5-adapter-ckfinder": "^11.0.5",
     "@ckeditor/ckeditor5-autoformat": "^11.0.5",
     "@ckeditor/ckeditor5-basic-styles": "^11.1.4",
