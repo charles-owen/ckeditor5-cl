@@ -60,7 +60,10 @@ export default class PasteImprover extends Plugin {
 
                 } else if(data.dataTransfer.types.includes('text/rtf')) {
                     const converter = new RtfToHtml();
-                    const html = converter.convert(data.dataTransfer.getData( 'text/rtf' ));
+                    let html = converter.convert(data.dataTransfer.getData( 'text/rtf' ));
+
+                    // Remove Visual Studio error header
+                    html = html.replace('Severity Code Description Project File Line Suppression State Error ', '');
 
                     data.isTransformedWithPasteFromOffice = true;
                     const normalizer = new HtmlNormalizer();
