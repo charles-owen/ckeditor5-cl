@@ -31,19 +31,8 @@ module.exports = {
 
 	optimization: {
 		minimizer: [
-			// new UglifyJsWebpackPlugin( {
-			// 	sourceMap: true,
-			// 	uglifyOptions: {
-			// 		output: {
-			// 			// Preserve CKEditor 5 license comments.
-			// 			comments: /^!/
-			// 		}
-			// 	}
-			// } ),
 			new TerserPlugin({
-				cache: true,
-				parallel: true,
-				sourceMap: true  // Must be set to true if using source-maps in production
+				parallel: true
 			})
 		]
 	},
@@ -73,9 +62,13 @@ module.exports = {
 					{
 						loader: 'style-loader',
 						options: {
-							injectType: 'singletonStyleTag'
+							injectType: 'singletonStyleTag',
+							attributes: {
+								'data-cke': true
+							}
 						}
 					},
+					"css-loader",
 					{
 						loader: 'postcss-loader',
 						options: styles.getPostCssConfig( {
@@ -84,7 +77,7 @@ module.exports = {
 							},
 							minify: true
 						} )
-					},
+					}
 				]
 			}
 		]
