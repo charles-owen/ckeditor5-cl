@@ -20,6 +20,7 @@ import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Font from '@ckeditor/ckeditor5-font/src/font';
+import CloudServicesPlugin from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
 import Canned from './src/canned';
 import PasteImprover from './src/PasteImprover';
@@ -47,7 +48,8 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	Canned,
 	Font,
-	PasteImprover
+	PasteImprover,
+	CloudServicesPlugin
 ];
 
 // Editor configuration.
