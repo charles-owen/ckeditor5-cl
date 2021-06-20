@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-cl",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Custom build of CKEditor for CourseLib",
   "keywords": [
     "CourseLib",
